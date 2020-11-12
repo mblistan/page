@@ -1,56 +1,362 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-	
-body {
-  font-family: Arial;
-  background-color: #000;
-}
+	<meta charset="UTF-8">
+	<title>Voucher DNE</title>
 
-.coupon {
-  width: 80%;
-  border-radius: 15px;
-  margin: 0 auto;
-  max-width: 600px;
-  height: 700px;
-  background-color: black;
-  background: #000;
-  
-}
+	<style>
+		body {
+			font-family: Arial, verdana, sans-serif;
+		}
 
-.logo {
-	margin-top: 10px;
-}
+		table,
+		table tr {
+			border: 1px solid #000;
+			border-spacing: 0;
 
-.container {
-  padding: 2px 16px;
-  background-color: #000;
-}
+		}
 
-.qr {
-	display: block;
-	margin: 0 auto;
-}
-.promo {
-  background: #000;
-  padding: 3px;
-}
+		table tr td {
+			padding: 5px;
+		}
 
-.expire {
-  color: red;
-}
-</style>
+		table table {
+			border: 0;
+		}
+
+		
+
+		.text-left {
+			text-align: left;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.text-right {
+			text-align: right;
+		}
+
+		h5, h3 {
+			margin: 0;
+		}
+
+		.foto {
+			background-color: #ccc;
+			height: 150px;
+			margin: auto;
+			width: 120px;
+		}
+
+		.voucher-code {
+			border-top: 1px solid #000;
+		}
+
+		.voucher-titulo {
+			border-bottom: 1px solid #000;
+		}
+
+		.voucher {
+			width: 700px;
+		}
+
+		.box {
+			border-top: 1px solid #000;
+		}
+
+		.box-bottom {
+			border-bottom: 1px solid #000;
+		}
+
+		.box h5 {
+			padding: 5px;
+		}
+
+		.logos img {
+			margin-right: 5px;
+		}
+
+		.frente {
+			border: 1px solid #000;
+			width: 400px;
+		}
+
+		.frente table td {
+			padding: 0;
+		}
+
+		.frente table td.dado {
+			padding-bottom: 3px;
+		}
+
+		.frente .logos {
+			float:left ;
+
+		}
+
+		.frente .titulo {
+			float: right;
+			text-align: center;
+			width: 270px;
+		}
+
+		.frente .titulo h4 {
+			margin: 0px;
+		}
+
+		.verso td h3 {
+			background-color: #ddd;
+			padding: 10px;
+		}
+
+		.footer {
+			color: #777;
+		}
+
+	</style>
 </head>
 <body>
+	<table celspacing="none" class="voucher">
+		<tr>
+			<td class="text-center"><h2>Documento do estudante</h2></td>
+			<td class="logos" align="right">
+				<img width="40" src="assets/images/anpg.jpeg" alt="">
+				<img width="40" src="assets/images/ubes.jpg" alt="">
+				<img width="40" src="assets/images/une.jpg" alt="">
+			</td>
+		</tr>
+		<tr>
 
-<div class="coupon">
-  <img class="logo" src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png" alt="Avatar" style="width:100%;">
-    <img class="qr" src="qr.png" style="width:200px;">
+		<tr>
+			<td class="box" colspan="2">
+				<h5>Válido somente com a apresentação de um documento de identificação com foto.</h5>
+			</td>
+		</tr>
 
-</div>
+		<tr>
+			<td class="box"  colspan="2">
+				<h5>A autencidade desta documento poderá ser verificada no site XXXXXXXXXXXXX,
+informando o código de autencidade impresso no documento.</h5>
+			</td>
+		</tr>
 
+		<tr>
+			<td class="box box-bottom"  colspan="2">
+				<h5>UNE/UBES/ANPG atesta que o aluno XXXXXXXXXXXXXXXX é estudante da XXXXXXXXXXXXXXXX, cursando o xxxxx período do curso xxxxxxxxx.</h5>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<table class="frente">
+					<tr>
+						<td colspan="2">
+							<div class="logos">
+								<img width="30" src="assets/images/anpg.jpeg" alt="">
+								<img width="30" src="assets/images/ubes.jpg" alt="">
+								<img width="30" src="assets/images/une.jpg" alt="">
+							</div>
+							<div class="titulo">
+								<h4>
+									<small>DOCUMENTO DO ESTUDANTE<br /> VOUCHER</small>
+								</h4>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<div class="foto"></div>
+						</td>
+						<td>
+							<table>
+								<tr>
+									<td>
+										<h5>
+											<small>Nome:</small>
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td class="dado">
+										<h5>
+											<small>TIAGO RIGOLETTO</small>
+										</h5>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<h5>
+											<small>Instituição de ensino:</small>
+										</h5>
+									</td>
+
+									<td>
+										<h5>
+											<small>Curso/Série:</small>
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td class="dado">
+										<h5>
+											<small>PUC MINAS</small>
+										</h5>
+									</td>
+
+									<td class="dado">
+										<h5>
+											<small>Design de Interação</small>
+										</h5>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<h5>
+											<small>Matrícula:</small>
+										</h5>
+									</td>
+
+									<td>
+										<h5>
+											<small>Dt de Nascimento:</small>
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td class="dado">
+										<h5>
+											<small>9837-2</small>
+										</h5>
+									</td>
+
+									<td class="dado">
+										<h5>
+											<small>25/10/1987</small>
+										</h5>
+									</td>
+								</tr>
+
+								<tr>
+									<td width="140px">
+										<h5>
+											<small>Doc de identificação:</small>
+										</h5>
+									</td>
+
+									<td>
+										<h5>
+											<small>CPF:</small>
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td class="dado">
+										<h5>
+											<small>RG 34.341.341-3</small>
+										</h5>
+									</td>
+
+									<td class="dado">
+										<h5>
+											<small>228.228.228-28</small>
+										</h5>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="center" colspan="2">
+										<br />
+										<h5>
+											Valido até 24-mar-2014
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td class="dado" align="center" colspan="2">
+										<h5>
+											<small><small>Documento válido em todo Território Nacional</small></small>
+										</h5>
+									</td>
+								</tr>
+							</table>
+						</td>
+						
+					</tr>
+				</table>
+				<td>
+					<table class="verso">
+						<tr>
+							<td>
+								<h3>DM6U-BTPZ- K3D4-8PSY</h3>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="center">
+								<h5>
+									<small>
+										<small>
+											O usar de álcool e outras drógas prejudíca sua saúde.
+										</small>
+									</small>
+								</h5>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="center">
+								<br />
+								Emitido em 01-01-2014
+							</td>
+						</tr>
+
+						<tr>
+							<td align="center">
+								Válido em 01-04-2015
+							</td>
+						</tr>
+					</table>
+				</td>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="footer">
+				<h5>
+					<small>
+						<small>
+							Baseado na Lei 12.933/2013. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et sapien nec dolor semper varius in vel ligula.
+						</small>
+					</small>
+				</h5>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" class="footer">
+				<h5>
+					<small>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et sapien nec dolor semper varius in vel ligula. Pellentesque sed diam eu magna faucibus interdum et eget dui.
+						</small>
+					</small>
+				</h5>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" class="footer">
+				<h5>
+					<small>
+						<small>
+							Baseado na Lei 12.933/2013. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et sapien nec dolor semper varius in vel ligula.
+						</small>
+					</small>
+				</h5>
+			</td>
+		</tr>
+	</table>
 </body>
-</html> 
-
+</html>
